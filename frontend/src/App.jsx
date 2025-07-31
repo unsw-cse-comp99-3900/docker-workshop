@@ -3,11 +3,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-const BASE_URL = import.meta.env.VITE_BACKEND_BASE_URL || "http://backend:8080";
+const BASE_URL = import.meta.env.VITE_BACKEND_BASE_URL || "http://backend:6991";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   const [joke, setJoke] = useState({});
 
   const getJoke = () => {
